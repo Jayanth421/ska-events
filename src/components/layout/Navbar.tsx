@@ -32,8 +32,8 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "shadow-lg"
-          : ""
+        ? "shadow-lg"
+        : ""
         }`}
       style={{
         background: isScrolled
@@ -66,7 +66,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
           <div
-            
+
           >
             <svg
               viewBox="0 0 250 250"
@@ -156,10 +156,10 @@ export default function Navbar() {
               <div className="pt-3 border-t border-[#C9A84C]/10 space-y-2">
                 <a
                   href="tel:+917995494307"
-                  className="flex items-center justify-center gap-1.5 text-[#C9A84C]/80 text-sm hover:text-[#C9A84C] transition-colors py-2"
+                  className="flex items-center justify-center gap-2 text-[#C9A84C]/80 text-sm hover:text-[#C9A84C] transition-colors py-2"
                 >
                   <Phone className="w-4 h-4" />
-                  {t("phone")}
+                  +91 79954 94307
                 </a>
                 <Link
                   href="/booking"
