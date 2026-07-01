@@ -124,8 +124,7 @@ export default function AdminLoginPage() {
             {/* Logo */}
             <div className="flex flex-col items-center mb-8">
               <div
-                className="w-16 h-16 rounded-full border-2 border-[#C9A84C]/60 flex items-center justify-center mb-3"
-                style={{ background: "rgba(201,168,76,0.1)" }}
+                
               >
                  <svg
               viewBox="0 0 250 250"

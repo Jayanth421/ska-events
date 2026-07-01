@@ -43,8 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4 group">
               <div
-                className="w-10 h-10 rounded-full border border-[#C9A84C]/60 flex items-center justify-center"
-                style={{ background: "rgba(201, 168, 76, 0.1)" }}
+               
               >
                 <svg
               viewBox="0 0 250 250"
