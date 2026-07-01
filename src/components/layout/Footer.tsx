@@ -46,9 +46,17 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full border border-[#C9A84C]/60 flex items-center justify-center"
                 style={{ background: "rgba(201, 168, 76, 0.1)" }}
               >
-                <svg viewBox="0 0 40 40" className="w-6 h-6" fill="none">
-                  <text x="20" y="27" textAnchor="middle" fill="#C9A84C" fontSize="18" fontFamily="Georgia, serif" fontWeight="700">S</text>
-                </svg>
+                <svg
+              viewBox="0 0 250 250"
+              className="w-16 h-16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <image
+                href="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
+                width="250"
+                height="250"
+              />
+            </svg>
               </div>
               <div>
                 <div className="text-[#C9A84C] font-serif text-sm font-bold tracking-[0.2em]">SKA EVENTS</div>
