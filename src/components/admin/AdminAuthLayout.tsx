@@ -110,12 +110,19 @@ export default function AdminAuthLayout({ children }: { children: React.ReactNod
             {/* Logo */}
             <Link href={`/${locale}/admin`} className="flex items-center gap-2.5 group">
               <div
-                className="w-8 h-8 rounded-full border border-[#C9A84C]/50 flex items-center justify-center"
-                style={{ background: "rgba(201,168,76,0.1)" }}
+                
               >
-                <svg viewBox="0 0 40 40" className="w-5 h-5" fill="none">
-                  <text x="20" y="28" textAnchor="middle" fill="#C9A84C" fontSize="20" fontFamily="Georgia, serif" fontWeight="700">S</text>
-                </svg>
+               <svg
+              viewBox="0 0 250 250"
+              className="w-16 h-16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <image
+                href="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
+                width="250"
+                height="250"
+              />
+            </svg>
               </div>
               <div>
                 <div className="text-[#C9A84C] font-serif text-xs font-bold tracking-[0.15em]">SKA EVENTS</div>
