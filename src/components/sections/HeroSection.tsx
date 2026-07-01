@@ -44,7 +44,7 @@ export default function HeroSection() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(90deg, rgba(48,8,8,.92) 0%, rgba(48,8,8,.75) 35%, rgba(48,8,8,.15) 75%, rgba(48,8,8,.05) 100%)",
+                "linear-gradient(90deg, #300808eb 0%, rgba(48,8,8,.75) 35%, rgba(48,8,8,.15) 75%, rgba(48,8,8,.05) 100%)",
             }}
           />
 
@@ -121,7 +121,7 @@ export default function HeroSection() {
               href="/booking"
               className="group flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-[#3D0812] transition-all duration-300 hover:scale-105"
               style={{
-                background: "linear-gradient(135deg, #C9A84C, #E8C97A, #C9A84C)",
+                background: "linear-gradient(135deg, #c9a84c, #E8C97A, #C9A84C)",
                 boxShadow: "0 4px 20px rgba(201, 168, 76, 0.4)",
               }}
             >
@@ -131,7 +131,10 @@ export default function HeroSection() {
             <Link
               href="/packages"
               className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-[#C9A84C] transition-all duration-300 hover:bg-[#C9A84C]/10"
-              style={{ border: "1.5px solid rgba(201, 168, 76, 0.6)" }}
+              style={{
+                background: "linear-gradient(135deg, #300808eb, #350909eb, #300808eb)",
+                boxShadow: "0 4px 20px rgba(201, 168, 76, 0.4)",
+              }}
             >
               {t("explorePackages")}
             </Link>
@@ -144,14 +147,14 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.3 }}
-        className="relative max-w-6xl mx-auto w-full px-4 sm:px-6 mb-0 pb-0"
+        className="relative max-w-6xl mx-auto w-full px-4 sm:px-3 mb-0 pb-0"
       >
         <div
           className="rounded-2xl p-4 sm:p-6"
           style={{
-            background: "rgba(199, 174, 11, 0.97)",
+            background: "#d5ab36",
             boxShadow: "0 10px 40px rgba(107,15,26,0.2)",
-            border: "1px solid rgba(201, 168, 76, 0.2)",
+            border: "2px solid rgb(81, 30, 11)",
           }}
         >
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">

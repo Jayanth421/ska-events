@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="hidden md:block py-1.5 border-b border-[#C9A84C]/10">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-end gap-4">
           <a
-            href="+917995494307"
+            href="+91 7995494307"
             className="flex items-center gap-1.5 text-[#C9A84C]/80 text-xs hover:text-[#C9A84C] transition-colors"
           >
             <Phone className="w-3 h-3" />
@@ -155,7 +155,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3 border-t border-[#C9A84C]/10 space-y-2">
                 <a
-                  href="tel:+919392484307"
+                  href="tel:+917995494307"
                   className="flex items-center justify-center gap-1.5 text-[#C9A84C]/80 text-sm hover:text-[#C9A84C] transition-colors py-2"
                 >
                   <Phone className="w-4 h-4" />
