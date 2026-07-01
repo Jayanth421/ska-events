@@ -1,0 +1,360 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "packages": "Packages",
+    "venues": "Venues",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "contact": "Contact",
+    "blog": "Blog",
+    "bookNow": "Book Now",
+    "phone": "+91 93924 84307"
+  },
+  "hero": {
+    "tagline": "WE CREATE",
+    "title": "Unforgettable",
+    "titleHighlight": "Moments",
+    "subtitle": "Weddings, Engagements, Birthdays, Corporate Events and More – We Plan It All Perfectly.",
+    "bookNow": "Book Now",
+    "explorePackages": "Explore Packages"
+  },
+  "search": {
+    "eventType": "Event Type",
+    "selectEvent": "Select Event",
+    "location": "Location",
+    "guests": "Guests",
+    "budget": "Budget",
+    "date": "Date",
+    "selectDate": "Select Date",
+    "search": "Search",
+    "wedding": "Wedding",
+    "engagement": "Engagement",
+    "birthday": "Birthday",
+    "corporate": "Corporate Event",
+    "housewarming": "Housewarming",
+    "babyShower": "Baby Shower",
+    "festival": "Festival",
+    "other": "Other"
+  },
+  "categories": {
+    "weddings": "Weddings",
+    "engagements": "Engagements",
+    "birthdays": "Birthdays",
+    "corporate": "Corporate Events",
+    "housewarming": "Housewarming",
+    "babyShower": "Baby Shower",
+    "festivals": "Festivals",
+    "more": "More Events"
+  },
+  "packages": {
+    "title": "Featured Packages",
+    "viewDetails": "View Details",
+    "from": "Starting from",
+    "premiumWedding": {
+      "title": "Premium Wedding",
+      "description": "Everything you need for a perfect wedding celebration.",
+      "price": "₹2,50,000"
+    },
+    "royalCelebration": {
+      "title": "Royal Celebration",
+      "description": "Elegant décor, premium services for your special day.",
+      "price": "₹1,50,000"
+    },
+    "birthdayBlast": {
+      "title": "Birthday Blast",
+      "description": "Make your birthday unforgettable with our amazing setups.",
+      "price": "₹75,000"
+    },
+    "corporateElite": {
+      "title": "Corporate Elite",
+      "description": "Professional events that leave a lasting impression.",
+      "price": "₹1,20,000"
+    }
+  },
+  "stats": {
+    "eventsCompleted": "Events Completed",
+    "happyClients": "Happy Clients",
+    "venuesPartnered": "Venues Partnered",
+    "teamMembers": "Expert Team Members"
+  },
+  "whyUs": {
+    "title": "Why Choose Us?",
+    "experienced": "Experienced & Professional Team",
+    "personalized": "Personalized Event Planning",
+    "premium": "Premium Quality Services",
+    "support": "24/7 Support & Assistance",
+    "knowMore": "Know More"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "priya": {
+      "text": "SKA Events made our wedding a dream come true! Every detail was perfect.",
+      "name": "Priya Sharma",
+      "location": "Hyderabad"
+    },
+    "rohan": {
+      "text": "Excellent team, professional service and beautiful decorations.",
+      "name": "Rohan Verma",
+      "location": "Secunderabad"
+    },
+    "anjali": {
+      "text": "Highly recommended! They handled everything so smoothly.",
+      "name": "Anjali Reddy",
+      "location": "Hyderabad"
+    }
+  },
+  "footer": {
+    "tagline": "We create unforgettable experiences with our creativity, passion and perfect planning.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Info",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe to get updates on our latest events and offers.",
+    "enterEmail": "Enter your email",
+    "subscribe": "Subscribe",
+    "address": "123, Event Street, Jubilee Hills, Hyderabad, Telangana – 500033",
+    "copyright": "© 2025 SKA Events. All Rights Reserved.",
+    "weddingPlanning": "Wedding Planning",
+    "engagements": "Engagements",
+    "corporateEvents": "Corporate Events",
+    "birthdayParties": "Birthday Parties",
+    "decorDesign": "Décor & Design",
+    "cateringServices": "Catering Services",
+    "entertainment": "Entertainment",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "refundPolicy": "Refund Policy"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer a comprehensive range of event planning and management services",
+    "weddingPlanning": {
+      "title": "Wedding Planning",
+      "description": "Complete wedding planning from engagement to reception with luxury décor and professional coordination."
+    },
+    "corporateEvents": {
+      "title": "Corporate Events",
+      "description": "Professional corporate event management including conferences, product launches, and team building events."
+    },
+    "birthdayParties": {
+      "title": "Birthday Parties",
+      "description": "Memorable birthday celebrations for all ages with themed setups and entertainment."
+    },
+    "socialEvents": {
+      "title": "Social Events",
+      "description": "Engagements, anniversaries, housewarmings, and all social celebrations planned to perfection."
+    },
+    "decorDesign": {
+      "title": "Décor & Design",
+      "description": "Creative floral arrangements, lighting design, and stage setups that transform your venue."
+    },
+    "catering": {
+      "title": "Catering Services",
+      "description": "Authentic multi-cuisine catering with traditional Telugu recipes and modern international dishes."
+    }
+  },
+  "venues": {
+    "title": "Our Venues",
+    "subtitle": "Premium venues across Hyderabad for every occasion",
+    "capacity": "Capacity",
+    "guests": "Guests",
+    "viewVenue": "View Venue",
+    "bookVenue": "Book Venue"
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "subtitle": "A glimpse of the magical moments we have created",
+    "all": "All",
+    "weddings": "Weddings",
+    "engagements": "Engagements",
+    "birthdays": "Birthdays",
+    "corporate": "Corporate"
+  },
+  "about": {
+    "title": "About SKA Events",
+    "subtitle": "Creating magical moments since 2010",
+    "story": "Our Story",
+    "storyText": "SKA Events was founded with a vision to transform ordinary occasions into extraordinary celebrations. With over 14 years of experience and 1000+ events successfully managed, we are Hyderabad's most trusted event management company.",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "team": "Our Team"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our event planning experts",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "eventType": "Event Type",
+    "date": "Event Date",
+    "message": "Message",
+    "send": "Send Message",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "visitUs": "Visit Us",
+    "successMessage": "Thank you! We will contact you shortly.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "booking": {
+    "title": "Book Your Event",
+    "step1": "Event Details",
+    "step2": "Personal Details",
+    "step3": "Package Selection",
+    "step4": "Confirmation",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm Booking",
+    "totalAmount": "Total Amount",
+    "payNow": "Pay Now",
+    "bookingConfirmed": "Booking Confirmed!",
+    "bookingId": "Booking ID",
+    "downloadInvoice": "Download Invoice"
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for doesn't exist.",
+      "goHome": "Go Home"
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "Something went wrong on our end. Please try again.",
+      "retry": "Try Again"
+    },
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "minLength": "Minimum {min} characters required",
+    "maxLength": "Maximum {max} characters allowed"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginSuccess": "Welcome back!",
+    "logoutSuccess": "Logged out successfully.",
+    "registerSuccess": "Account created successfully!"
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "myBookings": "My Bookings",
+    "upcomingEvents": "Upcoming Events",
+    "pastEvents": "Past Events",
+    "profile": "My Profile",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "totalSpent": "Total Spent",
+    "eventsBooked": "Events Booked"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "dashboard": "Dashboard",
+    "events": "Events",
+    "bookings": "Bookings",
+    "clients": "Clients",
+    "vendors": "Vendors",
+    "translations": "Translations",
+    "languages": "Languages",
+    "settings": "Settings",
+    "addLanguage": "Add Language",
+    "editTranslation": "Edit Translation",
+    "publishTranslation": "Publish Translation",
+    "importJson": "Import JSON",
+    "exportJson": "Export JSON",
+    "searchTranslation": "Search Translation",
+    "translationKey": "Translation Key",
+    "englishValue": "English Value",
+    "teluguValue": "Telugu Value",
+    "module": "Module",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this?",
+    "success": "Changes saved successfully!",
+    "error": "An error occurred. Please try again."
+  },
+  "language": {
+    "select": "Choose Your Preferred Language",
+    "selectTelugu": "మీకు ఇష్టమైన భాషను ఎంచుకోండి",
+    "remember": "Remember my language",
+    "continue": "Continue",
+    "english": "English",
+    "telugu": "తెలుగు",
+    "welcome": "Welcome",
+    "currentLanguage": "English"
+  },
+  "seo": {
+    "home": {
+      "title": "Luxury Wedding & Event Planner in Hyderabad | SKA Events",
+      "description": "SKA Events – Hyderabad's premier wedding and event management company. Weddings, Engagements, Birthdays, Corporate Events. Book now!",
+      "keywords": "wedding planner Hyderabad, event management, luxury weddings, SKA Events"
+    },
+    "services": {
+      "title": "Event Planning Services | SKA Events Hyderabad",
+      "description": "Comprehensive event planning services including weddings, corporate events, birthdays and more.",
+      "keywords": "event planning services, wedding services, corporate events Hyderabad"
+    },
+    "packages": {
+      "title": "Wedding & Event Packages | SKA Events",
+      "description": "Premium wedding and event packages starting from ₹75,000. Choose the perfect package for your special day.",
+      "keywords": "wedding packages, event packages, affordable wedding Hyderabad"
+    },
+    "contact": {
+      "title": "Contact SKA Events | Book Your Event",
+      "description": "Get in touch with SKA Events for your dream wedding or special event. Call +91 98765 43210.",
+      "keywords": "contact SKA Events, book wedding planner, event booking Hyderabad"
+    }
+  },
+  "loading": {
+    "default": "Loading...",
+    "translations": "Loading translations...",
+    "page": "Loading page...",
+    "booking": "Processing your booking...",
+    "payment": "Processing payment..."
+  },
+  "notifications": {
+    "bookingConfirmed": "Your booking has been confirmed!",
+    "bookingCancelled": "Your booking has been cancelled.",
+    "paymentSuccess": "Payment successful!",
+    "paymentFailed": "Payment failed. Please try again.",
+    "profileUpdated": "Profile updated successfully!",
+    "languageChanged": "Language changed to English"
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "noData": "No data found",
+    "error": "An error occurred",
+    "success": "Success!",
+    "warning": "Warning",
+    "info": "Information",
+    "skaBrand": "SKA EVENTS",
+    "tagline": "Your Vision, Our Creation"
+  }
+}

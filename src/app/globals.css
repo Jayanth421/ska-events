@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --maroon: #6b0f1a;
+    --maroon-dark: #4a0b12;
+    --maroon-deep: #3d0812;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --gold-bright: #ffd700;
+    --white: #ffffff;
+    --cream: #fdf8f0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-gray-900 bg-white;
+    font-feature-settings: "kern" 1;
+  }
+
+  /* Telugu font support */
+  :lang(te) {
+    font-family: "Noto Serif Telugu", "Mandali", system-ui, sans-serif;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2;
+    outline-color: var(--gold);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, #6b0f1a, #9b1b2a);
+    color: #e8c97a;
+    border: 1px solid rgba(201, 168, 76, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #9b1b2a, #6b0f1a);
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, #c9a84c, #e8c97a, #c9a84c);
+    color: #3d0812;
+  }
+
+  .btn-gold:hover {
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    border: 1.5px solid #c9a84c;
+    color: #c9a84c;
+    background: transparent;
+  }
+
+  .btn-outline-gold:hover {
+    background: rgba(201, 168, 76, 0.1);
+    box-shadow: 0 4px 15px rgba(201, 168, 76, 0.2);
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-center;
+    color: var(--maroon);
+  }
+
+  .gold-divider {
+    @apply flex items-center justify-center gap-3 my-4;
+  }
+
+  .gold-divider::before,
+  .gold-divider::after {
+    content: "";
+    @apply h-px flex-1;
+    background: linear-gradient(to right, transparent, #c9a84c);
+  }
+
+  .gold-divider::after {
+    background: linear-gradient(to left, transparent, #c9a84c);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(107, 15, 26, 0.15);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #c9a84c, #e8c97a, #c9a84c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .font-telugu {
+    font-family: "Noto Serif Telugu", "Mandali", serif;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,369 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supabase Setup Guide</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #1f2328;
+    padding: 24px 16px 48px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  h1 { font-size: 20px; font-weight: 700; color: #1f2328; margin-bottom: 4px; }
+  .subtitle { color: #57606a; font-size: 13px; margin-bottom: 28px; }
+
+  /* Step card */
+  .step {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .step-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #f7f8fa;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .badge {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: #3b82d4;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .badge.green  { background: #16a34a; }
+  .badge.purple { background: #7c5cd8; }
+  .badge.red    { background: #dc2626; }
+  .badge.gold   { background: #b45309; }
+
+  .step-title { font-size: 15px; font-weight: 700; color: #1f2328; }
+  .step-body { padding: 16px 18px; }
+  .step-body p { color: #57606a; margin-bottom: 10px; font-size: 13px; }
+  .step-body p:last-child { margin-bottom: 0; }
+
+  /* Navigation path */
+  .nav-path {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f2328;
+    margin: 6px 0 10px;
+    flex-wrap: wrap;
+  }
+  .nav-path span { color: #57606a; }
+
+  /* Code block */
+  pre {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-x: auto;
+    margin: 8px 0 4px;
+    font-family: "Consolas", "Cascadia Code", "Fira Code", monospace;
+  }
+  .kw  { color: #cba6f7; }
+  .fn  { color: #89b4fa; }
+  .str { color: #a6e3a1; }
+  .cmt { color: #6c7086; font-style: italic; }
+  .num { color: #fab387; }
+
+  /* Info box */
+  .info {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #1e40af;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  .warn {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #92400e;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  .success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #166534;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+  /* Table listing */
+  .table-list { margin: 8px 0; }
+  .table-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 13px;
+  }
+  .table-row:last-child { border-bottom: none; }
+  .table-name {
+    font-family: monospace;
+    font-size: 12.5px;
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 1px 7px;
+    color: #3b82d4;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .table-desc { color: #57606a; font-size: 12.5px; }
+  .new-badge {
+    font-size: 10px;
+    font-weight: 700;
+    background: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+    border-radius: 4px;
+    padding: 0 5px;
+    white-space: nowrap;
+  }
+
+  /* Divider */
+  .divider { height: 1px; background: #e5e7eb; margin: 28px 0 24px; }
+
+  /* Section label */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #57606a;
+    margin-bottom: 12px;
+    margin-top: 4px;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 11px;
+    color: #57606a;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>🗄️ Supabase Setup Guide</h1>
+  <p class="subtitle">Follow these steps in order. Takes about 5 minutes total.</p>
+
+  
+  <div class="step">
+    <div class="step-header">
+      <div class="badge">1</div>
+      <div class="step-title">Open the SQL Editor in Supabase</div>
+    </div>
+    <div class="step-body">
+      <p>Log in to your Supabase dashboard, then navigate to:</p>
+      <div class="nav-path">
+        <strong>supabase.com/dashboard</strong>
+        <span>→</span> Your Project
+        <span>→</span> <strong>SQL Editor</strong>
+        <span>→</span> <strong>+ New Query</strong>
+      </div>
+      <p>You will see a blank query editor. This is where you will paste and run the SQL below.</p>
+    </div>
+  </div>
+
+  
+  <div class="step">
+    <div class="step-header">
+      <div class="badge green">2</div>
+      <div class="step-title">Run the Full Schema SQL</div>
+    </div>
+    <div class="step-body">
+      <p>Open the file <strong>src/lib/supabase/schema.sql</strong> from your project, copy the <em>entire file</em>, paste it into the SQL Editor, and click <strong>Run</strong>.</p>
+
+      <div class="warn">⚠️ If you already ran an older version of the schema before, that is fine — all statements use <code>CREATE TABLE IF NOT EXISTS</code> so they will not break existing data. Just run it again.</div>
+
+      <p>This will create all 8 tables:</p>
+      <div class="table-list">
+        <div class="table-row">
+          <span class="table-name">languages</span>
+          <span class="table-desc">EN / Telugu language settings</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">translations</span>
+          <span class="table-desc">Key-value language translations</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">profiles</span>
+          <span class="table-desc">User profile data</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">bookings</span>
+          <span class="table-desc">Customer event booking submissions</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">events</span>
+          <span class="table-desc">Admin-managed internal events</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">vendors</span>
+          <span class="table-desc">Vendor/supplier directory</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">gallery_items</span>
+          <span class="table-desc">Gallery photos managed from admin panel</span>
+          <span class="new-badge">NEW</span>
+        </div>
+        <div class="table-row">
+          <span class="table-name">planning_packages</span>
+          <span class="table-desc">Packages shown on the website, managed from admin panel</span>
+          <span class="new-badge">NEW</span>
+        </div>
+      </div>
+
+      <div class="success">✅ After running, you should see <strong>"Success. No rows returned"</strong> at the bottom of the editor.</div>
+    </div>
+  </div>
+
+  
+  <div class="step">
+    <div class="step-header">
+      <div class="badge purple">3</div>
+      <div class="step-title">Create Your Admin User</div>
+    </div>
+    <div class="step-body">
+      <p><strong>3a.</strong> Go to:</p>
+      <div class="nav-path">
+        Your Project <span>→</span> <strong>Authentication</strong> <span>→</span> <strong>Users</strong> <span>→</span> <strong>Add User</strong>
+      </div>
+      <p>Fill in:</p>
+      <ul style="margin:6px 0 10px 18px;color:#57606a;font-size:13px;line-height:2">
+        <li><strong>Email:</strong> admin@skaevents.com (or any email you want)</li>
+        <li><strong>Password:</strong> choose a strong password</li>
+        <li>✅ Check <strong>"Auto Confirm"</strong> so you don't need to verify email</li>
+      </ul>
+      <p>Click <strong>Create User</strong>.</p>
+
+      <p style="margin-top:12px"><strong>3b.</strong> Now go back to <strong>SQL Editor</strong> and run this command to give that user admin rights. Replace the email if you used a different one:</p>
+      <pre><span class="kw">UPDATE</span> auth.users
+<span class="kw">SET</span> raw_user_meta_data = raw_user_meta_data || <span class="str">'{"role":"admin","is_admin":true}'</span>
+<span class="kw">WHERE</span> email = <span class="str">'admin@skaevents.com'</span>;</pre>
+      <div class="success">✅ You should see <strong>"1 row affected"</strong> after running this.</div>
+    </div>
+  </div>
+
+  
+  <div class="step">
+    <div class="step-header">
+      <div class="badge red">4</div>
+      <div class="step-title">Verify Tables Were Created</div>
+    </div>
+    <div class="step-body">
+      <p>Go to:</p>
+      <div class="nav-path">
+        Your Project <span>→</span> <strong>Table Editor</strong>
+      </div>
+      <p>You should see all 8 tables listed on the left side. If you see <strong>gallery_items</strong> and <strong>planning_packages</strong> in the list, everything worked correctly.</p>
+      <div class="info">💡 You can also quickly verify by running this query in the SQL Editor:<br /><br />
+        <code style="font-family:monospace">SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;</code>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="step">
+    <div class="step-header">
+      <div class="badge gold">5</div>
+      <div class="step-title">Log In to the Admin Panel</div>
+    </div>
+    <div class="step-body">
+      <p>Start your dev server if it's not already running, then open:</p>
+      <div class="nav-path">
+        <strong>http://localhost:3000/en/admin/login</strong>
+      </div>
+      <p>Use the email and password you created in Step 3a. You will land on the Admin Dashboard with all modules including the new <strong>Gallery</strong> and <strong>Planning &amp; Packages</strong> cards.</p>
+
+      <div class="success">✅ Once logged in, go to <strong>Planning &amp; Packages</strong> and add your packages — they will instantly appear on the public website. Go to <strong>Gallery</strong> and add your photos — they will instantly appear on the Gallery page.</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="section-label">Quick Reference — New Tables Only</p>
+
+  <div class="step">
+    <div class="step-header">
+      <div class="badge green">🖼</div>
+      <div class="step-title">gallery_items — what each column means</div>
+    </div>
+    <div class="step-body">
+      <div class="table-list">
+        <div class="table-row"><span class="table-name">src</span><span class="table-desc">Full URL of the image (Unsplash, your Supabase Storage, Google Drive, etc.)</span></div>
+        <div class="table-row"><span class="table-name">title</span><span class="table-desc">English caption shown on hover</span></div>
+        <div class="table-row"><span class="table-name">title_te</span><span class="table-desc">Telugu caption (optional)</span></div>
+        <div class="table-row"><span class="table-name">category</span><span class="table-desc">weddings / engagements / birthdays / corporate / other</span></div>
+        <div class="table-row"><span class="table-name">sort_order</span><span class="table-desc">Lower number = shown first (0, 1, 2 …)</span></div>
+        <div class="table-row"><span class="table-name">active</span><span class="table-desc">true = visible on website, false = hidden</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <div class="badge purple">📦</div>
+      <div class="step-title">planning_packages — what each column means</div>
+    </div>
+    <div class="step-body">
+      <div class="table-list">
+        <div class="table-row"><span class="table-name">key</span><span class="table-desc">A unique short name like "premiumWedding" (no spaces)</span></div>
+        <div class="table-row"><span class="table-name">title_en / title_te</span><span class="table-desc">Package name in English and Telugu</span></div>
+        <div class="table-row"><span class="table-name">description_en / _te</span><span class="table-desc">Short description text</span></div>
+        <div class="table-row"><span class="table-name">price_en / price_te</span><span class="table-desc">Price string e.g. "₹2,50,000"</span></div>
+        <div class="table-row"><span class="table-name">badge_en / badge_te</span><span class="table-desc">Corner badge e.g. "Most Popular"</span></div>
+        <div class="table-row"><span class="table-name">image_url</span><span class="table-desc">Package card image URL</span></div>
+        <div class="table-row"><span class="table-name">features_en / _te</span><span class="table-desc">Array of bullet-point features (enter one per line in the admin form)</span></div>
+        <div class="table-row"><span class="table-name">active</span><span class="table-desc">true = shown on website</span></div>
+        <div class="table-row"><span class="table-name">sort_order</span><span class="table-desc">Display order (0 = first)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:18px">
+    ⚠️ <strong>Already have the old tables?</strong> No problem. The old tables (bookings, events, vendors, etc.) already exist in your Supabase — running the schema again will skip them safely. Only <strong>gallery_items</strong> and <strong>planning_packages</strong> are brand new and will be created fresh.
+  </div>
+
+</div>
+<footer>Made with IBM Bob</footer>
+</body>
+</html>
