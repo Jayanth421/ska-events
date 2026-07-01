@@ -132,7 +132,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5 text-[#C9A84C] flex-shrink-0" stroke="currentColor" strokeWidth="1.5"><path d="M2 3a1.5 1.5 0 011.5-1.5H5a1 1 0 01.97.757l.6 2.4a1 1 0 01-.29.99l-.87.87a9 9 0 004 4l.87-.87a1 1 0 01.99-.29l2.4.6A1 1 0 0114 11v1.5A1.5 1.5 0 0112.5 14C6.149 14 1 8.851 1 2.5z"/></svg>
-                <a href="tel:+91 93924843070" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">+91 9392484307</a>
+                <a href="tel:+91 7995494307" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">+91 7995494307</a>
               </div>
               <div className="flex items-center gap-2">
                 <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5 text-[#C9A84C] flex-shrink-0" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 4 7-4"/></svg>
