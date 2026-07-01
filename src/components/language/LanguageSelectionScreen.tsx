@@ -127,13 +127,12 @@ export default function LanguageSelectionScreen({
                   className="flex flex-col items-center mb-6"
                 >
                   <div
-                    className="w-20 h-20 rounded-full border-2 border-[#C9A84C] flex items-center justify-center mb-3 overflow-hidden"
-                    style={{ background: "rgba(201, 168, 76, 0.1)" }}
+                    
                   >
                     <img
                       src="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
                       alt="SKA Events Logo"
-                      className="w-14 h-14 object-contain"
+                      className="w-20 h-20 object-contain"
                     />
                   </div>
 
@@ -142,7 +141,7 @@ export default function LanguageSelectionScreen({
                   </div>
 
                   <div className="text-[#E8C97A]/60 text-xs tracking-[0.2em] mt-0.5">
-                    Your Vision, Our Creation
+                    Your Vision , Our Creation
                   </div>
                 </motion.div>
 
