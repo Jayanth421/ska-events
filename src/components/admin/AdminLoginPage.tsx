@@ -127,9 +127,17 @@ export default function AdminLoginPage() {
                 className="w-16 h-16 rounded-full border-2 border-[#C9A84C]/60 flex items-center justify-center mb-3"
                 style={{ background: "rgba(201,168,76,0.1)" }}
               >
-                <svg viewBox="0 0 40 40" className="w-9 h-9" fill="none">
-                  <text x="20" y="28" textAnchor="middle" fill="#C9A84C" fontSize="22" fontFamily="Georgia, serif" fontWeight="700">S</text>
-                </svg>
+                 <svg
+              viewBox="0 0 250 250"
+              className="w-16 h-16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <image
+                href="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
+                width="250"
+                height="250"
+              />
+            </svg>
               </div>
               <div className="text-[#C9A84C] font-serif font-bold tracking-[0.2em] text-sm">SKA EVENTS</div>
               <div className="text-[#C9A84C]/50 text-[10px] tracking-wider mt-0.5">
@@ -177,7 +185,7 @@ export default function AdminLoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@skaevents.com"
+                  placeholder="user name"
                   autoComplete="email"
                   className="w-full px-4 py-3 rounded-xl text-white text-sm focus:outline-none transition-all"
                   style={{
