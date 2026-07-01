@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://skaevents.com";
+  const baseUrl = "https://skaevents.online";
   const locales = ["en", "te"];
 
   const pages = [

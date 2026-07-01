@@ -126,13 +126,25 @@ export default function LanguageSelectionScreen({
                   transition={{ delay: 0.3 }}
                   className="flex flex-col items-center mb-6"
                 >
-                  <div className="w-20 h-20 rounded-full border-2 border-[#C9A84C] flex items-center justify-center mb-3"
-                    style={{ background: "rgba(201, 168, 76, 0.1)" }}>
-                    <LogoMark />
-                  </div>
+                  <div
+                    className="w-20 h-20 rounded-full border-2 border-[#C9A84C] flex items-center justify-center mb-3 overflow-hidden"
+                    style={{ background: "rgba(201, 168, 76, 0.1)" }}
+                  >
+                    
+                    <image
+                    href="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
+                    
+                      width={56}
+                      height={56}
+                      className="object-contain"
+                  />
+
+                    </div>
+
                   <div className="text-[#C9A84C] font-serif tracking-[0.3em] text-sm font-semibold">
                     SKA EVENTS
                   </div>
+
                   <div className="text-[#E8C97A]/60 text-xs tracking-[0.2em] mt-0.5">
                     Your Vision, Our Creation
                   </div>
@@ -190,11 +202,10 @@ export default function LanguageSelectionScreen({
                   <button
                     onClick={() => setSelectedLanguage("te")}
                     aria-pressed={selectedLanguage === "te"}
-                    className={`relative rounded-xl py-4 px-5 text-center transition-all duration-300 group ${
-                      selectedLanguage === "te"
-                        ? "ring-2 ring-[#C9A84C]"
-                        : "ring-1 ring-white/10 hover:ring-[#C9A84C]/50"
-                    }`}
+                    className={`relative rounded-xl py-4 px-5 text-center transition-all duration-300 group ${selectedLanguage === "te"
+                      ? "ring-2 ring-[#C9A84C]"
+                      : "ring-1 ring-white/10 hover:ring-[#C9A84C]/50"
+                      }`}
                     style={{
                       background:
                         selectedLanguage === "te"
@@ -218,11 +229,10 @@ export default function LanguageSelectionScreen({
                   <button
                     onClick={() => setSelectedLanguage("en")}
                     aria-pressed={selectedLanguage === "en"}
-                    className={`relative rounded-xl py-4 px-5 text-center transition-all duration-300 group ${
-                      selectedLanguage === "en"
-                        ? "ring-2 ring-[#C9A84C]"
-                        : "ring-1 ring-white/10 hover:ring-[#C9A84C]/50"
-                    }`}
+                    className={`relative rounded-xl py-4 px-5 text-center transition-all duration-300 group ${selectedLanguage === "en"
+                      ? "ring-2 ring-[#C9A84C]"
+                      : "ring-1 ring-white/10 hover:ring-[#C9A84C]/50"
+                      }`}
                     style={{
                       background:
                         selectedLanguage === "en"
@@ -257,11 +267,10 @@ export default function LanguageSelectionScreen({
                     className="flex items-center gap-2 group cursor-pointer"
                   >
                     <div
-                      className={`w-4.5 h-4.5 rounded border transition-all duration-200 flex items-center justify-center ${
-                        rememberLanguage
-                          ? "bg-[#C9A84C] border-[#C9A84C]"
-                          : "border-white/30 group-hover:border-[#C9A84C]/60"
-                      }`}
+                      className={`w-4.5 h-4.5 rounded border transition-all duration-200 flex items-center justify-center ${rememberLanguage
+                        ? "bg-[#C9A84C] border-[#C9A84C]"
+                        : "border-white/30 group-hover:border-[#C9A84C]/60"
+                        }`}
                       style={{ width: "18px", height: "18px" }}
                     >
                       {rememberLanguage && (
@@ -289,17 +298,18 @@ export default function LanguageSelectionScreen({
                   }}
                 >
                   {selectedLanguage === "te" ? "కొనసాగించు" : "Continue"}
-                  <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 inline ml-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                  <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 inline ml-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
                 </motion.button>
               </div>
 
               {/* Gold bottom border accent */}
               <div className="h-1 w-full bg-gradient-to-r from-transparent via-[#C9A84C] to-transparent" />
             </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          </motion.div >
+        </motion.div >
+      )
+      }
+    </AnimatePresence >
   );
 }
 
