@@ -130,16 +130,12 @@ export default function LanguageSelectionScreen({
                     className="w-20 h-20 rounded-full border-2 border-[#C9A84C] flex items-center justify-center mb-3 overflow-hidden"
                     style={{ background: "rgba(201, 168, 76, 0.1)" }}
                   >
-                    
-                    <image
-                    href="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
-                    
-                      width={56}
-                      height={56}
-                      className="object-contain"
-                  />
-
-                    </div>
+                    <img
+                      src="https://i.ibb.co/M53N94sJ/640456935-18020611619650208-6330034363367840394-n.png"
+                      alt="SKA Events Logo"
+                      className="w-14 h-14 object-contain"
+                    />
+                  </div>
 
                   <div className="text-[#C9A84C] font-serif tracking-[0.3em] text-sm font-semibold">
                     SKA EVENTS
