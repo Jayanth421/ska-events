@@ -159,7 +159,7 @@ export default function Navbar() {
                   className="flex items-center justify-center gap-2 text-[#C9A84C]/80 text-sm hover:text-[#C9A84C] transition-colors py-2"
                 >
                   <Phone className="w-4 h-4" />
-                  +91 79954 94307
+                  +9179954 94307
                 </a>
                 <Link
                   href="/booking"

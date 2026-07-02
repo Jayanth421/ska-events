@@ -136,11 +136,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5 text-[#C9A84C] flex-shrink-0" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 4 7-4"/></svg>
-                <a href="mailto:hello@skaevents.com" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">hello@skaevents.com</a>
+                <a href="mailto:skaevents.in@gmail.com" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">skaevents.in@gmail.com</a>
               </div>
               <div className="flex items-center gap-2">
                 <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5 text-[#C9A84C] flex-shrink-0" stroke="currentColor" strokeWidth="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 2a10 10 0 010 12M2 8h12"/></svg>
-                <a href="https://www.skaevents.com" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">www.skaevents.com</a>
+                <a href="https://www.skaevents.online" className="text-white/50 hover:text-[#E8C97A] text-xs transition-colors">www.skaevents.online</a>
               </div>
             </div>
           </div>
